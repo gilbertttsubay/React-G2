@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Karyawan</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <button class="pagelink" onclick="changePageTo('Login', this, 'blue')" id="LoginDefault">Login</button>
+    <button class="pagelink" onclick="changePageTo('EmployeeInput', this, 'blue')">Input Karyawan</button>
+    <button class="pagelink" onclick="changePageTo('EmployeeList', this, 'blue')">List Karyawan</button>
+    <button class="pagelink" onclick="changePageTo('DivisionInput', this, 'blue')">Input divisi</button>
+    <button class="pagelink" onclick="changePageTo('DivisionList', this, 'blue')">List Divisi</button>
+    <button class="pagelink" onclick="changePageTo('DivisionAssignment', this, 'blue')">Penugasan Divisi</button>
+
+    <div id="Login">
+        <div class="box">
+            <form action="">
+                <label for="">
+                    Username
+                </label>
+                <input type="text" name="username" class="form-login">
+    
+                <label for="">
+                    Password
+                </label>
+                <input type="password" name="password" class="form-login">
+            </form>
+            <button class="btn-add" onclick="">Login</button>
+        </div>
+    </div>
+    
+    <div id="employeeInput" class="content">
+        <form action="">
+            <h4>
+                NIK
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Name
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Placebirth
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Birthday
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Gender
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Bloodtype
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Address
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                RT
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                RW
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Urban Village
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Sub-District
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Religion
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Marital Status
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Proffesion
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Nationality
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+            <h4>
+                Division
+            </h4>
+            <input type="tel" class="form-input-employee" name="nik" id="nik">
+    
+    
+        </form>
+    
+        <button class="btn-add"></button>
+    </div>
+    
+    
+    <div id="EmployeeList" class="content">
+        <div class="box">
+            <table id="table">
+    
+            </table>
+        </div>
+    </div>
+    
+    <div id="input-divisi" class="content">
+    
+    </div>
+    
+    <div id="list-divisi" class="content">
+    
+    </div>
+    
+    <div id="penugasan-divisi" class="content">
+    
+    </div>  
+
+    <script src="script.js"></script>
+
+
+</body>
+
+
+</html>
