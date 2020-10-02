@@ -8,7 +8,7 @@ export default function App() {
   const save = async () => {
     try{
         await AsyncStorage.setItem("Namaku", name)
-    } catch(err);{
+    } catch(err){
         alert(err)
     }
   }
@@ -24,6 +24,23 @@ export default function App() {
         alert(err)
     }
   }
+
+  const remove = async() => {
+    try {
+      await AsyncStorage.removeItem("Namaku")
+    } catch(err) {
+      alert(err)
+    } finally {
+      setName("")
+    }
+  }
+
+  useEffect(() => {
+    load()
+    return () => {
+      []
+    }
+  }, [input])
   return (
     <View style={styles.container}>
 
@@ -37,7 +54,7 @@ export default function App() {
           <Text>Simpan</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress = {() => remove()}>
           <Text>Hapus</Text>
         </TouchableOpacity>
     </View>
